@@ -3,7 +3,7 @@ module spi_master (
     input        clk,
     input        rst,
     input        start,
-    input  [1:0] mode,      // {CPOL, CPHA}
+    input  [1:0] mode,      // {CPOL, CPHA} xcz
     input  [7:0] data_in,
     output reg   mosi,
     output reg   sclk,
