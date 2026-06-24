@@ -32,3 +32,4 @@ Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
 Stopped at time : 4280 ns : File "/home/ise/Verilog_project/SPI-4-MODE/testbench.v" Line 61
+# exit 0
