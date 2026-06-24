@@ -1,0 +1,10 @@
+Command line:
+   spi_master_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57961
+
+Wed Jun 24 17:58:51 2026
+
+
+ Elaboration Time: 0.05 sec
