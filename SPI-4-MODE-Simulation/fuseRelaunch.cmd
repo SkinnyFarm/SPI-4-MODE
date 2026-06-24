@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/Verilog_project/SPI-4-MODE/SPI-4-MODE-Simulation/spi_master_tb_isim_beh.exe" -prj "/home/ise/Verilog_project/SPI-4-MODE/SPI-4-MODE-Simulation/spi_master_tb_beh.prj" "work.spi_master_tb" "work.glbl" 

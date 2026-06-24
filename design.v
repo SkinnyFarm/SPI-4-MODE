@@ -14,7 +14,7 @@ module spi_master (
 wire cpol = mode[1];
 wire cpha = mode[0];
 
-reg [2:0] bit_cnt;
+reg [3:0] bit_cnt;
 reg [7:0] shift_reg;
 reg [3:0] clk_div;
 reg       busy;
@@ -59,7 +59,7 @@ always @(posedge clk or posedge rst) begin
 
             // MODE 0 & MODE 2
             if (!cpha && trailing_edge) begin
-                if (bit_cnt == 7) begin
+                if (bit_cnt == 8) begin
                     busy <= 0;
                     cs   <= 1;
                     done <= 1;
@@ -74,7 +74,7 @@ always @(posedge clk or posedge rst) begin
             if (cpha && leading_edge) begin
                 mosi      <= shift_reg[7];
                 shift_reg <= {shift_reg[6:0], 1'b0};
-                if (bit_cnt == 7) begin
+                if (bit_cnt == 8) begin
                     busy <= 0;
                     cs   <= 1;
                     done <= 1;
